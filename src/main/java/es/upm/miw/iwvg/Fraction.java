@@ -27,4 +27,7 @@ public class Fraction {
         return denominator;
     }
 
+    public Fraction multiply(Fraction f2){
+        return new Fraction(f2.getNumerator() * this.getNumerator(), f2.getDenominator() * this.getDenominator());
+    }
 }

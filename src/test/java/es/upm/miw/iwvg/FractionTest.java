@@ -23,4 +23,13 @@ public class FractionTest {
     void testDecimal() {
         assertEquals(0.5, testFraction.decimal());
     }
+
+    @Test
+    void testMultiply(){
+        Fraction f2 = new Fraction(2,4);
+        Fraction result = this.testFraction.multiply(f2);
+        assertEquals(0.25, result.decimal());
+        assertEquals(0.5, this.testFraction.decimal());
+        assertEquals(0.5, f2.decimal());
+    }
 }
