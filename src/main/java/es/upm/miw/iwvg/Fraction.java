@@ -30,4 +30,12 @@ public class Fraction {
     public Fraction multiply(Fraction f2){
         return new Fraction(f2.getNumerator() * this.getNumerator(), f2.getDenominator() * this.getDenominator());
     }
+
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public void setDenominator(int denominator) {
+        this.denominator = denominator;
+    }
 }
