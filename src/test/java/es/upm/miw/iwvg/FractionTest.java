@@ -2,7 +2,7 @@ package es.upm.miw.iwvg;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FractionTest {
@@ -31,5 +31,15 @@ public class FractionTest {
         assertEquals(0.25, result.decimal());
         assertEquals(0.5, this.testFraction.decimal());
         assertEquals(0.5, f2.decimal());
+    }
+
+    @Test
+    void testSet(){
+        Integer oldNumerator = testFraction.getNumerator();
+        Integer oldDenominator = testFraction.getDenominator();
+        testFraction.setNumerator(5);
+        testFraction.setDenominator(8);
+        assertNotEquals(oldNumerator, testFraction.getNumerator());
+        assertNotEquals(oldDenominator, testFraction.getDenominator();
     }
 }
