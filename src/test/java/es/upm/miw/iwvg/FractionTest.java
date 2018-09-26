@@ -41,6 +41,6 @@ public class FractionTest {
         testFraction.setNumerator(5);
         testFraction.setDenominator(8);
         assertNotEquals(oldNumerator, testFraction.getNumerator());
-        assertNotEquals(oldDenominator, testFraction.getDenominator();
+        assertNotEquals(oldDenominator, testFraction.getDenominator());
     }
 }
