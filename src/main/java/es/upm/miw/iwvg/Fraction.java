@@ -35,4 +35,12 @@ public class Fraction {
         Fraction resultado = new Fraction ( this.getNumerator() * f2.getDenominator() , this.getDenominator() * f2.getNumerator());
         return resultado;
     }
+
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public void setDenominator(int denominator) {
+        this.denominator = denominator;
+    }
 }
