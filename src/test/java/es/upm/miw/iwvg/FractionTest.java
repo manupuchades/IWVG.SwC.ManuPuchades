@@ -32,6 +32,7 @@ public class FractionTest {
         assertEquals(0.5, this.testFraction.decimal());
         assertEquals(0.5, f2.decimal());
     }
+
     @Test
     void testDivide(){
         Fraction f2 = new Fraction (4, 2);
@@ -39,5 +40,14 @@ public class FractionTest {
         assertEquals(0.25, resultado.decimal());
         assertEquals(0.5, this.testFraction.decimal());
         assertEquals(2, f2.decimal());
+    }
+
+    @Test
+    void testSet(){
+        Fraction f3 = new Fraction();
+        f3.setNumerator(4);
+        f3.setDenominator(5);
+        assertEquals(4, f3.getNumerator());
+        assertEquals(5, f3.getDenominator());
     }
 }
