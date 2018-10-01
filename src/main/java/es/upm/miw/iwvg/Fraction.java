@@ -32,7 +32,7 @@ public class Fraction {
     }
 
     public Fraction divide (Fraction f2){
-        Fraction resultado = new Fraction ( this.getNumerator() * f2.getDenominator() , this.getDenominator() * f2.getNumerator());
+        Fraction resultado=new Fraction( this.getNumerator() * f2.getDenominator() , this.getDenominator() * f2.getNumerator());
         return resultado;
     }
 }
