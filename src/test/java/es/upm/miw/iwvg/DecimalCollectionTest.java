@@ -73,7 +73,6 @@ class DecimalCollectionTest {
         collection_to_insert.add(0, double_inserted);
         decimalCollection.setCollection(collection_to_insert);
         assertEquals(double_inserted, (Double) decimalCollection.getNumber_in_Pos(0));
-
-}
+    }
 
 }
