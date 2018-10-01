@@ -57,4 +57,9 @@ public class DecimalCollection {
     public double getNumber_in_Pos(int position) {
         return this.collection.get(position);
     }
+
+
+    public void setCollection(List<Double> collection){
+        this.collection = collection;
+    }
 }

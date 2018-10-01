@@ -41,7 +41,6 @@ public class FractionTest {
         assertEquals(0.5, this.testFraction.decimal());
         assertEquals(2, f2.decimal());
     }
-
     @Test
     void testSet(){
         Fraction f3 = new Fraction();
