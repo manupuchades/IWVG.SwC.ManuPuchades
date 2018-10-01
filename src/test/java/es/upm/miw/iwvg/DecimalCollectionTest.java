@@ -50,5 +50,16 @@ class DecimalCollectionTest {
     void testHigherArithmeticExceptionIfEmpty() {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
+    @Test
+    void testSetNumber_in_Pos(){
+        double expected_number=8;
+        double obtained_number;
+        int position_insert=1;
+        int previous_size=this.decimalCollection.size();
+        this.decimalCollection.setNumber_in_Pos(position_insert, expected_number);
+        assertEquals(previous_size+1, this.decimalCollection.size());
+        obtained_number = this.decimalCollection.getNumber_in_Pos(position_insert);
+        assertEquals(expected_number, obtained_number);
+    }
 
 }
