@@ -43,4 +43,5 @@ public class Fraction {
     public void setDenominator(int denominator) {
         this.denominator = denominator;
     }
+
 }
