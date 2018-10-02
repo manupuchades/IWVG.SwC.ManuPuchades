@@ -37,11 +37,11 @@ public class Fraction {
     }
 
     public void setNumerator(int numerator) {
-        this.numerator = numerator;
+        this.numerator  = numerator;
     }
 
     public void setDenominator(int denominator) {
-        this.denominator = denominator;
+        this.denominator  = denominator;
     }
 
 }

@@ -35,7 +35,7 @@ public class FractionTest {
 
 
     @Test
-    void testDivide() {
+    void testDivides() {
         Fraction f2 = new Fraction(4, 2);
         Fraction resultado = this.testFraction.divide(f2);
     }
@@ -51,9 +51,9 @@ public class FractionTest {
     @Test
     void testSet(){
         Fraction f3 = new Fraction();
-        f3.setNumerator(4);
+        f3.setNumerator(6);
         f3.setDenominator(5);
-        assertEquals(4, f3.getNumerator());
+        assertEquals(6, f3.getNumerator());
         assertEquals(5, f3.getDenominator());
     }
 
