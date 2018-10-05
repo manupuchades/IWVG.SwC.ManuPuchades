@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class UserTest {
@@ -45,6 +46,21 @@ public class UserTest {
         assertEquals("N.", testUser.initials());
         assertEquals("N.", testUpperCaseUser.initials());
         assertEquals("N.", testLowerCaseUser.initials());
+    }
+
+    @Test
+    void testSet(){
+        Integer oldNumber = testUser.getNumber();
+        String oldName = testUser.getName();
+        String oldFamilyName = testUser.getFamilyName();
+
+        testUser.setNumber(2);
+        testUser.setName("Daniel");
+        testUser.setFamilyName("Perez");
+
+        assertNotEquals(oldNumber, testUser.getNumber());
+        assertNotEquals(oldName, testUser.getName());
+        assertNotEquals(oldFamilyName, testUser.getFamilyName());
     }
 }
 

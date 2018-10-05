@@ -6,7 +6,9 @@
 
 ### Estado del código
 
-[![Build Status](https://travis-ci.org/manupuchades/IWVG.SwC.ManuPuchades.svg?branch=master)](https://travis-ci.org/manupuchades/IWVG.SwC.ManuPuchades)
+master: [![Build Status](https://travis-ci.org/manupuchades/IWVG.SwC.ManuPuchades.svg?branch=master)](https://travis-ci.org/manupuchades/IWVG.SwC.ManuPuchades)
+
+develop: [![Build Status](https://travis-ci.org/manupuchades/IWVG.SwC.ManuPuchades.svg?branch=develop)](https://travis-ci.org/manupuchades/IWVG.SwC.ManuPuchades)
 
 ![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=IWVG.SwC.Test&metric=alert_status)
 

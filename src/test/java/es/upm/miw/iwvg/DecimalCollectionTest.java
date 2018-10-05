@@ -4,7 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class DecimalCollectionTest {
@@ -50,5 +54,24 @@ class DecimalCollectionTest {
     void testHigherArithmeticExceptionIfEmpty() {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
+    @Test
+    void testSetNumber_in_Pos(){
+        double expected_number=8;
+        double obtained_number;
+        int position_insert=1;
+        int previous_size=this.decimalCollection.size();
+        this.decimalCollection.setNumber_in_Pos(position_insert, expected_number);
+        assertEquals(previous_size+1, this.decimalCollection.size());
+        obtained_number = this.decimalCollection.getNumber_in_Pos(position_insert);
+        assertEquals(expected_number, obtained_number);
+    }
 
+    @Test
+    void testSetCollection(){
+        List<Double> collection_to_insert = new ArrayList<>();
+        Double double_inserted= Double.valueOf(99);
+        collection_to_insert.add(0, double_inserted);
+        decimalCollection.setCollection(collection_to_insert);
+        assertEquals(double_inserted, (Double) decimalCollection.getNumber_in_Pos(0));
+    }
 }

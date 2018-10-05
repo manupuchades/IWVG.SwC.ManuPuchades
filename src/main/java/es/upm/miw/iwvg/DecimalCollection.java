@@ -49,5 +49,17 @@ public class DecimalCollection {
         }
         return higher;
     }
+    public void setNumber_in_Pos(int position, double num_to_insert){
+        this.collection.add(position, num_to_insert);
 
+    }
+
+    public double getNumber_in_Pos(int position) {
+        return this.collection.get(position);
+    }
+
+
+    public void setCollection(List<Double> collection){
+        this.collection = collection;
+    }
 }

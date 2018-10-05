@@ -27,4 +27,21 @@ public class Fraction {
         return denominator;
     }
 
+    public Fraction multiply(Fraction f2){
+        return new Fraction(f2.getNumerator() * this.getNumerator(), f2.getDenominator() * this.getDenominator());
+    }
+
+    public Fraction divide (Fraction f2){
+        Fraction resultado = new Fraction ( this.getNumerator() * f2.getDenominator() , this.getDenominator() * f2.getNumerator());
+        return resultado;
+    }
+
+    public void setNumerator(int numerator) {
+        this.numerator  = numerator;
+    }
+
+    public void setDenominator(int denominator) {
+        this.denominator  = denominator;
+    }
+
 }
